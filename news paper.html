@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Daily Pulse</title>
+  <style>
+    :root {
+      --primary: #1f2b50;
+      --accent: #ff4d4f;
+      --soft-bg: #f4f6fa;
+      --text-dark: #222;
+      --text-muted: #555;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--soft-bg);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #2b3e73);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 56px;
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: white;
+      padding: 14px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 30px;
+    }
+
+    article {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    article:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    article h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: var(--primary);
+    }
+
+    .meta {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    article p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Daily Pulse</h1>
+    <p>Fact • Focus • Fresh Perspective</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">National</a>
+    <a href="#">World</a>
+    <a href="#">Tech</a>
+    <a href="#">Health</a>
+    <a href="#">Sports</a>
+    <a href="#">Entertainment</a>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Rural Solar Grids Light Up Andhra Pradesh</h2>
+      <div class="meta">July 17, 2025 | By Staff Reporter</div>
+      <p>Remote districts experience new hope as government-led solar infrastructure transforms power access, with local leaders praising the long-term environmental and economic impact.</p>
+    </article>
+
+    <article>
+      <h2>AI-Driven Agriculture Boosts Crop Yields</h2>
+      <div class="meta">By AgriTech Desk</div>
+      <p>Smart sensors and predictive weather algorithms are helping farmers adjust irrigation, monitor soil conditions, and detect pest activity before it's visible to the human eye.</p>
+    </article>
+
+    <article>
+      <h2>Cricket Team’s Last-Minute Win Sparks Celebrations</h2>
+      <div class="meta">Sports Bureau</div>
+      <p>The thrilling final match brought stadiums to life as Team India’s 3-run victory marked its spot in history. Fans flooded social media with tributes and memes.</p>
+    </article>
+  </main>
+
+  <footer>
+    &copy; 2025 The Daily Pulse • Designed by JAKKULA • All rights reserved
+  </footer>
+</body>
+</html>
